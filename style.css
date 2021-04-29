@@ -10,6 +10,7 @@
 .showcase {
     position: absolute;
     right: 0;
+    left: 0;
     width: 100%;
     min-height: 100vh;
     padding: 100px;
@@ -34,6 +35,7 @@
 }
 
 .logo {
+    font-size: 2em;
     text-transform: uppercase;
     cursor: pointer;
 }
@@ -81,3 +83,79 @@
     z-index: 10;
 }
 
+.text h2 {
+    font-size: 5em;
+    font-weight: 800;
+    line-height: 1em;
+    text-transform: uppercase;
+}
+
+.text h3 {
+    font-size: 4em;
+    font-weight: 600;
+    line-height: 1em;
+    text-transform: uppercase;
+}
+
+.text p {
+    font-size: 1.1em;
+    margin: 20px 0;
+    font-weight: 400;
+    max-width: 700px;
+}
+
+.text a {
+    display: inline-block;
+    font-size: 1em;
+    border: solid #fff;
+    padding: 10px 30px;
+    text-decoration: none;
+    color: #fff;
+    margin-top: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.4s;
+}
+.text a:hover {
+    letter-spacing: 6px;
+}
+
+.social {
+    position: absolute;
+    bottom: 20px;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.social li {
+    list-style: none;
+}
+
+.social li a {
+    display: inline-block;
+    filter: invert(1);
+    margin-right: 20px;
+    transform: scale(0.6);
+    transition: 0.4s;
+}
+.social li a:hover {
+    transform: scale(0.7) translateY(-15px);
+}
+
+@media(max-width: 991px) {
+    .showcase, 
+    .showcase header {
+        padding: 40px;
+    }
+
+    .text h2 {
+        font-size: 3.5em;
+    }
+    .text h3 {
+        font-size: 2.5em;
+    }
+
+}
